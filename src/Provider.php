@@ -42,6 +42,6 @@ class Provider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/Config/money.php', 'money');
+//        $this->mergeConfigFrom(__DIR__ . '/Config/money.php', 'money');
     }
 }
