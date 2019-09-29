@@ -688,7 +688,8 @@ class Money implements Arrayable, Jsonable, JsonSerializable, Renderable
             $callback($formatter);
         }
 
-        return $formatter->formatCurrency($this->getValue(), $this->currency->getCurrency());
+//        return $formatter->formatCurrency($this->getValue(), $this->currency->getCurrency());
+        return $formatter->formatCurrency($this->amount, $this->currency->getCurrency());
     }
 
     /**
